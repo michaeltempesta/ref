@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>Referendum</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="banner">
+            <h1>REFERENDUM</h1>
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#poll-of-the-week">Poll of the Week</a></li>
+                <li><a href="#past-polls">Past Polls</a></li>
+                <li><a href="#signup-login">Signup/Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="referendum-info">
+        <h2>What is a Referendum?</h2>
+        <p>A referendum is a direct vote in which an entire electorate is invited to vote on a particular proposal. This powerful tool of democracy can alter laws, amend constitutions, and shape the destiny of nations. Unlike other forms of voting, a referendum brings a specific issue directly to the people, bypassing the conventional legislative process.</p>
+
+        <h2>The Vital Role of Referendums</h2>
+        <p>Referendums stand as a hallmark of participatory democracy, ensuring that the voice of the people plays a critical role in the governance process. They empower citizens to have a direct say in important decisions that affect their lives, fostering a sense of involvement and responsibility in the democratic process.</p>
+
+        <h2>Why Referendums Matter?</h2>
+        <ul>
+            <li><strong>Direct Democracy:</strong> Referendums offer a direct line of communication between the government and its citizens, ensuring that people's opinions are heard and considered on major issues.</li>
+            <li><strong>Accountability:</strong> They hold elected officials accountable, reminding them that the ultimate power lies with the people they represent.</li>
+            <li><strong>Informed Society:</strong> By encouraging public debate and discussion, referendums contribute to a more informed and engaged citizenry.</li>
+            <li><strong>Legitimacy:</strong> Decisions made through referendums carry a high degree of legitimacy, as they directly reflect the will of the people.</li>
+            <li><strong>Empowerment:</strong> Referendums give power to the people, allowing them to influence important policies and decisions.</li>
+        </ul>
+
+        <p>At [Referendum], we believe in the power of your voice. Explore our site to participate in our latest polls, review past results, and join a community committed to shaping a fair and functioning society.</p>
+    </section>
+
+    <!-- Additional content goes here -->
+    <!-- At the bottom of your index.html, before the closing </body> tag -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to update the content of referendum-info section
+    function updateContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                document.querySelector('.referendum-info').innerHTML = html;
+            });
+    }
+
+    // Event listeners for navigation items
+    document.querySelectorAll('nav ul li a').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const url = this.getAttribute('href');
+            updateContent(url);
+        });
+    });
+});
+</script>
+</body>
+</html>
+

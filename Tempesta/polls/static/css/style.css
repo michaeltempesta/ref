@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.banner {
+    background-color: forestgreen;
+    color: white;
+    padding: 10px 0;
+}
+
+.navigation-bar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-bar ul li {
+    float: left;
+}
+
+.navigation-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation-bar ul li a:hover {
+    background-color: #111;
+}
+
+.referendum-info {
+    padding-top: 100px; /* Adjust based on header size */
+    text-align: left;
+    margin: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.banner {
+    background-color: forestgreen;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}

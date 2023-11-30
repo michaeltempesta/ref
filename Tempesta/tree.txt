@@ -1,0 +1,31 @@
+.
+├── db.sqlite3
+├── manage.py
+├── polls
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── static
+│   │   └── css
+│   │       └── style.css
+│   ├── templates
+│   │   └── index.html
+│   ├── tests.py
+│   └── views.py
+├── ref
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── settings.cpython-311.pyc
+│   │   ├── urls.cpython-311.pyc
+│   │   └── wsgi.cpython-311.pyc
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── tree.txt
+
+8 directories, 21 files
